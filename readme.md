@@ -8,7 +8,11 @@ Please find more info about each part in the relevant Readme file ([frontend](fr
 
 When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
 
-## How to run locally?
-1. [Install Docker](https://docs.docker.com/get-docker/)
-2. [Install Docker Compose](https://docs.docker.com/compose/install/)
-3. Run `docker-compose up`. 
+## First setup
+
+1. First download and install [Docker](https://docs.docker.com/get-docker/).
+2. Now you can verify if docker is installed in your system by running the following commands in your terminal: `docker -v` and `docker-compose -v`.
+3. Then open root directory of the project in terminal and run `docker-compose up` to load Anythink market's frontend and backend.
+4. If docker is working correctly then the backend should be running and able to connect to your local database. Test it by pointing your browser to [http://localhost:3000/api/ping](http://localhost:3000/api/ping)
+5. The backend is running. Now, it’s time to check the frontend and make sure it’s connected to the backend. If everything is working properly, you’ll be able to create a new user on [http://localhost:3001/register](http://localhost:3001/register)
+6. Create a new user and you’ll be able to move to the next task.
